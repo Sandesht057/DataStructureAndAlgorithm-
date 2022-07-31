@@ -1,0 +1,14 @@
+C:\Users\Dell\source\repos\GeeksForGeeksPractice\GeeksForGeeksPractice\bin\Debug\netcoreapp3.1\GeeksForGeeksPractice.exe
+C:\Users\Dell\source\repos\GeeksForGeeksPractice\GeeksForGeeksPractice\bin\Debug\netcoreapp3.1\GeeksForGeeksPractice.deps.json
+C:\Users\Dell\source\repos\GeeksForGeeksPractice\GeeksForGeeksPractice\bin\Debug\netcoreapp3.1\GeeksForGeeksPractice.runtimeconfig.json
+C:\Users\Dell\source\repos\GeeksForGeeksPractice\GeeksForGeeksPractice\bin\Debug\netcoreapp3.1\GeeksForGeeksPractice.runtimeconfig.dev.json
+C:\Users\Dell\source\repos\GeeksForGeeksPractice\GeeksForGeeksPractice\bin\Debug\netcoreapp3.1\GeeksForGeeksPractice.dll
+C:\Users\Dell\source\repos\GeeksForGeeksPractice\GeeksForGeeksPractice\bin\Debug\netcoreapp3.1\GeeksForGeeksPractice.pdb
+C:\Users\Dell\source\repos\GeeksForGeeksPractice\GeeksForGeeksPractice\obj\Debug\netcoreapp3.1\GeeksForGeeksPractice.csproj.AssemblyReference.cache
+C:\Users\Dell\source\repos\GeeksForGeeksPractice\GeeksForGeeksPractice\obj\Debug\netcoreapp3.1\GeeksForGeeksPractice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\source\repos\GeeksForGeeksPractice\GeeksForGeeksPractice\obj\Debug\netcoreapp3.1\GeeksForGeeksPractice.AssemblyInfoInputs.cache
+C:\Users\Dell\source\repos\GeeksForGeeksPractice\GeeksForGeeksPractice\obj\Debug\netcoreapp3.1\GeeksForGeeksPractice.AssemblyInfo.cs
+C:\Users\Dell\source\repos\GeeksForGeeksPractice\GeeksForGeeksPractice\obj\Debug\netcoreapp3.1\GeeksForGeeksPractice.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\GeeksForGeeksPractice\GeeksForGeeksPractice\obj\Debug\netcoreapp3.1\GeeksForGeeksPractice.dll
+C:\Users\Dell\source\repos\GeeksForGeeksPractice\GeeksForGeeksPractice\obj\Debug\netcoreapp3.1\GeeksForGeeksPractice.pdb
+C:\Users\Dell\source\repos\GeeksForGeeksPractice\GeeksForGeeksPractice\obj\Debug\netcoreapp3.1\GeeksForGeeksPractice.genruntimeconfig.cache
