@@ -1,4 +1,8 @@
-﻿using System;
+﻿using GeeksForGeeksPractice.ArrayProblems;
+using GeeksForGeeksPractice.GraphProblem;
+using GeeksForGeeksPractice.GreedyApproach;
+using GeeksForGeeksPractice.StringRealtedProblem;
+using System;
 using System.Collections.Generic;
 
 namespace GeeksForGeeksPractice
@@ -53,12 +57,96 @@ namespace GeeksForGeeksPractice
             //PrintAllSubsetOfNaturalNumber findSubSet = new PrintAllSubsetOfNaturalNumber();
             //findSubSet.FindSubset(inputSubset,3);
 
-            TwoDArrayImplementaton twoArray = new TwoDArrayImplementaton();
-            twoArray.PrintTwoDArray();
+            //TwoDArrayImplementaton twoArray = new TwoDArrayImplementaton();
+            //twoArray.PrintTwoDArray();
+
+            //PrintOfStringInReverse reverseOne = new PrintOfStringInReverse();
+            //string reverseResult = reverseOne.PrintReverseStringIterativeApproach("abc");
+
+            //PrintOfStringInReverse reverseRecursiveApproach = new PrintOfStringInReverse();
+            //reverseRecursiveApproach.PrintReverseStringRecursiveApproach("abcd", 3);
+
+            //FindTheFirstAndLastOccuranceOfGivenString result = new FindTheFirstAndLastOccuranceOfGivenString();
+            //result.RecursiveApproach("ABCDEFGB",'B',0);
+
+
+            //int[] inputArray = new int[] { 0, 1, 2,2,5, 3 };
+            //CheckAnyArrayIsSortedStrictlyIncreasing result = new CheckAnyArrayIsSortedStrictlyIncreasing();
+            //var resultSet =  result.RecursiveApproachCheck(inputArray, 0);
+
+            //MoveAllXtoTheEndOfTheString inputObj = new MoveAllXtoTheEndOfTheString();
+            //string res= inputObj.RecursiveApproach("ABXXXCDE", 0, "");
+
+            //RemoveDuplicateInString duplicateRes = new RemoveDuplicateInString();
+            //duplicateRes.RecursiveApproach("abcccdeefg",0,"");
+
+            //PrintAllSubSequenceOfString subsequence = new PrintAllSubSequenceOfString();
+            //subsequence.PrintSubSequence("abc","", 0);
+
+            //PrintUniqueSubsequenceofString prn = new PrintUniqueSubsequenceofString();
+            //prn.RecursiveApproach("aabc", 0, "");
+
+            //PrintAllPermutationOfString permutationObj = new PrintAllPermutationOfString();
+            //permutationObj.PrintPermutation("abc", "");
+
+
+            //PrintAllPermutationOfString permutationObj = new PrintAllPermutationOfString();
+            //permutationObj.PermutationOfStringIterativeApprovach("abc",0,2);
+
+            //int[] nums = new int[] { 1, 1, 2 };
+            //RemoveDuplicatFromArray removeDuplicateObj = new RemoveDuplicatFromArray();
+            //removeDuplicateObj.RemoveDuplicate(nums);
+
+            //int[] nums = new int[] { 7, 1, 5, 3, 6, 4 };
+            //BestTimeToBusyAndSellStock stockObj = new BestTimeToBusyAndSellStock();
+            //stockObj.MaxProfit(nums);
+
+            //int[] nums = new int[] { 2, 1, 7, 15 };
+            //_2SumProblem sum = new _2SumProblem();
+            ////sum.FindSum(nums,9);
+            //sum.UsingHashMap(nums,9);
+
+            //int[] nums = new int[] { -1,0,1 ,2,-1,-4};
+            //_3SumArrayProblem sum = new _3SumArrayProblem();
+            //sum.ThreeSumArrayProblem(nums);
+
+            //int[] startArray = new int[] { 50, 120, 200, 550, 700, 850 };
+            //int[] departureArray = new int[] { 500, 550, 600, 700, 900, 1000 };
+
+            //SolveMinimumPlatFormProblem obj = new SolveMinimumPlatFormProblem();
+            //var result= obj.FindMiniMumPlatForm(startArray,departureArray);
+
             //BinaryTreeImplementation treeObj = new BinaryTreeImplementation();
             //Node root = treeObj.CreateBinaryTree();
 
-           // Console.ReadLine();
+
+            //Graphs Impleemtation
+
+            //BreadthFirstSearch bfs = new BreadthFirstSearch(4);
+            //bfs.AddEdge(0, 1);
+            //bfs.AddEdge(0, 2);
+            //bfs.AddEdge(1, 2);
+            //bfs.AddEdge(2, 0);
+            //bfs.AddEdge(2, 3);
+            //bfs.AddEdge(3, 3);
+            //var res = bfs.BFS(0);
+
+
+            DepthFirstSearch dfs = new DepthFirstSearch();                   
+            LinkedList<int>[] list = new LinkedList<int>[7];
+            for (int i = 0; i < 4; i++)
+            {
+                list[i] = new LinkedList<int>();
+            }
+            list[0].AddLast(1);
+            list[0].AddLast(2);
+            list[1].AddLast(2);
+            list[2].AddLast(0);
+            list[2].AddLast(3);
+            list[3].AddLast(3);
+            var res= dfs.dfsOfGraph(4, list);
+
+            Console.ReadLine();
         }
 
   

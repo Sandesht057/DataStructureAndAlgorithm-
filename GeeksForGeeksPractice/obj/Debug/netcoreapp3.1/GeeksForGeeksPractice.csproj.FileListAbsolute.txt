@@ -12,3 +12,17 @@ C:\Users\Dell\source\repos\GeeksForGeeksPractice\GeeksForGeeksPractice\obj\Debug
 C:\Users\Dell\source\repos\GeeksForGeeksPractice\GeeksForGeeksPractice\obj\Debug\netcoreapp3.1\GeeksForGeeksPractice.dll
 C:\Users\Dell\source\repos\GeeksForGeeksPractice\GeeksForGeeksPractice\obj\Debug\netcoreapp3.1\GeeksForGeeksPractice.pdb
 C:\Users\Dell\source\repos\GeeksForGeeksPractice\GeeksForGeeksPractice\obj\Debug\netcoreapp3.1\GeeksForGeeksPractice.genruntimeconfig.cache
+D:\DataStructureAndAlgorithm\DataStructureAndAlgorithm-\GeeksForGeeksPractice\bin\Debug\netcoreapp3.1\GeeksForGeeksPractice.exe
+D:\DataStructureAndAlgorithm\DataStructureAndAlgorithm-\GeeksForGeeksPractice\bin\Debug\netcoreapp3.1\GeeksForGeeksPractice.deps.json
+D:\DataStructureAndAlgorithm\DataStructureAndAlgorithm-\GeeksForGeeksPractice\bin\Debug\netcoreapp3.1\GeeksForGeeksPractice.runtimeconfig.json
+D:\DataStructureAndAlgorithm\DataStructureAndAlgorithm-\GeeksForGeeksPractice\bin\Debug\netcoreapp3.1\GeeksForGeeksPractice.runtimeconfig.dev.json
+D:\DataStructureAndAlgorithm\DataStructureAndAlgorithm-\GeeksForGeeksPractice\bin\Debug\netcoreapp3.1\GeeksForGeeksPractice.dll
+D:\DataStructureAndAlgorithm\DataStructureAndAlgorithm-\GeeksForGeeksPractice\bin\Debug\netcoreapp3.1\GeeksForGeeksPractice.pdb
+D:\DataStructureAndAlgorithm\DataStructureAndAlgorithm-\GeeksForGeeksPractice\obj\Debug\netcoreapp3.1\GeeksForGeeksPractice.csproj.AssemblyReference.cache
+D:\DataStructureAndAlgorithm\DataStructureAndAlgorithm-\GeeksForGeeksPractice\obj\Debug\netcoreapp3.1\GeeksForGeeksPractice.GeneratedMSBuildEditorConfig.editorconfig
+D:\DataStructureAndAlgorithm\DataStructureAndAlgorithm-\GeeksForGeeksPractice\obj\Debug\netcoreapp3.1\GeeksForGeeksPractice.AssemblyInfoInputs.cache
+D:\DataStructureAndAlgorithm\DataStructureAndAlgorithm-\GeeksForGeeksPractice\obj\Debug\netcoreapp3.1\GeeksForGeeksPractice.AssemblyInfo.cs
+D:\DataStructureAndAlgorithm\DataStructureAndAlgorithm-\GeeksForGeeksPractice\obj\Debug\netcoreapp3.1\GeeksForGeeksPractice.csproj.CoreCompileInputs.cache
+D:\DataStructureAndAlgorithm\DataStructureAndAlgorithm-\GeeksForGeeksPractice\obj\Debug\netcoreapp3.1\GeeksForGeeksPractice.dll
+D:\DataStructureAndAlgorithm\DataStructureAndAlgorithm-\GeeksForGeeksPractice\obj\Debug\netcoreapp3.1\GeeksForGeeksPractice.pdb
+D:\DataStructureAndAlgorithm\DataStructureAndAlgorithm-\GeeksForGeeksPractice\obj\Debug\netcoreapp3.1\GeeksForGeeksPractice.genruntimeconfig.cache

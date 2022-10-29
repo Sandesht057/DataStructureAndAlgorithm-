@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/fm/3xE2SgyxfbC3Q8RcJD7QnXjRsxm4/izrCQdywGKBbob1LIimOUq/TqTsccQgHnbOdBXAra+WOPgf3pUm5A==",
+  "dgSpecHash": "6HJlvPSvxguz9bIla7xoIGXtUvJ6k0QlWkUqOTZQQ/PY8D+UonPGMLharOz0BoBd4hOo6kzixILqAKvuAYTL6g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dell\\source\\repos\\GeeksForGeeksPractice\\GeeksForGeeksPractice\\GeeksForGeeksPractice.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
-  ],
+  "projectFilePath": "D:\\DataStructureAndAlgorithm\\DataStructureAndAlgorithm-\\GeeksForGeeksPractice\\GeeksForGeeksPractice.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
