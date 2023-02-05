@@ -1,6 +1,7 @@
-﻿using GeeksForGeeksPractice.ArrayProblems;
+using GeeksForGeeksPractice.ArrayProblems;
 using GeeksForGeeksPractice.GraphProblem;
 using GeeksForGeeksPractice.GreedyApproach;
+using GeeksForGeeksPractice.LinkedList;
 using GeeksForGeeksPractice.StringRealtedProblem;
 using System;
 using System.Collections.Generic;
@@ -131,8 +132,30 @@ namespace GeeksForGeeksPractice
             //bfs.AddEdge(3, 3);
             //var res = bfs.BFS(0);
 
+            //CreateSinglyLinkedListWithThreeNode();
 
-            DepthFirstSearch dfs = new DepthFirstSearch();                   
+           // DeletionInLinkedList();
+
+            RecursiveApproachReverseLinkedList();
+
+            Console.ReadLine();
+        }
+
+        static  void  RecursiveApproachReverseLinkedList()
+        {
+            ReverseLinkedListInRecursiveApproach reverseLinkedListInRecursiveApproach = new ReverseLinkedListInRecursiveApproach();
+            reverseLinkedListInRecursiveApproach.Push(20);
+            reverseLinkedListInRecursiveApproach.Push(4);
+            reverseLinkedListInRecursiveApproach.Push(15);
+            reverseLinkedListInRecursiveApproach.Push(85);
+            //reverseLinkedListInRecursiveApproach.Push(85);
+
+            reverseLinkedListInRecursiveApproach.Reverse(reverseLinkedListInRecursiveApproach.head);
+        }
+
+        public void DepthFirstSearchInLinekdList()
+        {
+            DepthFirstSearch dfs = new DepthFirstSearch();
             LinkedList<int>[] list = new LinkedList<int>[7];
             for (int i = 0; i < 4; i++)
             {
@@ -144,13 +167,36 @@ namespace GeeksForGeeksPractice
             list[2].AddLast(0);
             list[2].AddLast(3);
             list[3].AddLast(3);
-            var res= dfs.dfsOfGraph(4, list);
+            var res = dfs.dfsOfGraph(4, list);
 
-            Console.ReadLine();
         }
 
-  
+        public static void CreateSinglyLinkedListWithThreeNode()
+        {
+            NodeForSinglyLinkedList nodeForSinglyLinkedList = new NodeForSinglyLinkedList();
+            nodeForSinglyLinkedList.head = new  NodeForSinglyLinkedList.NodeSL(1);
 
+            NodeForSinglyLinkedList.NodeSL second = new NodeForSinglyLinkedList.NodeSL(2);
+            NodeForSinglyLinkedList.NodeSL third = new NodeForSinglyLinkedList.NodeSL(3);
+            NodeForSinglyLinkedList.NodeSL fourth = new NodeForSinglyLinkedList.NodeSL(4);
+           
+
+            nodeForSinglyLinkedList.head.next = second;
+            second.next = third;
+            third.next = fourth;
+        }
+
+        public static void DeletionInLinkedList()
+        {
+            DeletionInLinkedList delObj = new DeletionInLinkedList();
+            delObj.PushNode(7);
+            delObj.PushNode(1);
+            delObj.PushNode(3);
+            delObj.PushNode(2);
+            delObj.DeleteNode(1);
+        }
 
     }
+
+
 }

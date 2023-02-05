@@ -1,0 +1,15 @@
+D:\DataStructureAndAlgorithm\DataStructureAndAlgorithm-\GeeksForGeeksPractice\bin\Debug\net6.0\GeeksForGeeksPractice.exe
+D:\DataStructureAndAlgorithm\DataStructureAndAlgorithm-\GeeksForGeeksPractice\bin\Debug\net6.0\GeeksForGeeksPractice.deps.json
+D:\DataStructureAndAlgorithm\DataStructureAndAlgorithm-\GeeksForGeeksPractice\bin\Debug\net6.0\GeeksForGeeksPractice.runtimeconfig.json
+D:\DataStructureAndAlgorithm\DataStructureAndAlgorithm-\GeeksForGeeksPractice\bin\Debug\net6.0\GeeksForGeeksPractice.dll
+D:\DataStructureAndAlgorithm\DataStructureAndAlgorithm-\GeeksForGeeksPractice\bin\Debug\net6.0\GeeksForGeeksPractice.pdb
+D:\DataStructureAndAlgorithm\DataStructureAndAlgorithm-\GeeksForGeeksPractice\obj\Debug\net6.0\GeeksForGeeksPractice.csproj.AssemblyReference.cache
+D:\DataStructureAndAlgorithm\DataStructureAndAlgorithm-\GeeksForGeeksPractice\obj\Debug\net6.0\GeeksForGeeksPractice.GeneratedMSBuildEditorConfig.editorconfig
+D:\DataStructureAndAlgorithm\DataStructureAndAlgorithm-\GeeksForGeeksPractice\obj\Debug\net6.0\GeeksForGeeksPractice.AssemblyInfoInputs.cache
+D:\DataStructureAndAlgorithm\DataStructureAndAlgorithm-\GeeksForGeeksPractice\obj\Debug\net6.0\GeeksForGeeksPractice.AssemblyInfo.cs
+D:\DataStructureAndAlgorithm\DataStructureAndAlgorithm-\GeeksForGeeksPractice\obj\Debug\net6.0\GeeksForGeeksPractice.csproj.CoreCompileInputs.cache
+D:\DataStructureAndAlgorithm\DataStructureAndAlgorithm-\GeeksForGeeksPractice\obj\Debug\net6.0\GeeksForGeeksPractice.dll
+D:\DataStructureAndAlgorithm\DataStructureAndAlgorithm-\GeeksForGeeksPractice\obj\Debug\net6.0\refint\GeeksForGeeksPractice.dll
+D:\DataStructureAndAlgorithm\DataStructureAndAlgorithm-\GeeksForGeeksPractice\obj\Debug\net6.0\GeeksForGeeksPractice.pdb
+D:\DataStructureAndAlgorithm\DataStructureAndAlgorithm-\GeeksForGeeksPractice\obj\Debug\net6.0\GeeksForGeeksPractice.genruntimeconfig.cache
+D:\DataStructureAndAlgorithm\DataStructureAndAlgorithm-\GeeksForGeeksPractice\obj\Debug\net6.0\ref\GeeksForGeeksPractice.dll
