@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace GeeksForGeeksPractice.LinkedList
 {
-  public class ReverseTheLinkedListNodeInKGroup
+  public class ReverseNodeInKGroupIterativeApprovach
   {
 
     public Node head;
@@ -38,21 +38,35 @@ namespace GeeksForGeeksPractice.LinkedList
       {
         return head;
       }
-      Node start = head, end = head;
-      int inc = k - 1;
-      while(inc>0)
+
+      Node dummyNode = new Node(-1);
+      dummyNode.nextNode = head;
+      Node beforeStart = dummyNode, end = head;
+
+      int inc =0;
+      while(end !=null)
       {
-        end = end.nextNode;
-        if(end == null)
+        inc++;
+        if(inc%k==0)
         {
-          return head;
+          Node start = beforeStart.nextNode;
+          Node temp = end.nextNode;
+          ReverseOwn(start, end);
+
+          beforeStart.nextNode = end;
+          start.nextNode = temp;
+
+          beforeStart = start;
+          end = temp;
         }
-        inc--;          
+        else
+        {
+          end = end.nextNode;
+        }
       }
-      Node nextHead = RerverseInKGroup(end.nextNode, k);
-      ReverseOwn(start, end);
-      start.nextNode = nextHead;
-      return end;
+
+      return dummyNode.nextNode;
+
     }
 
     Node ReverseOwn(Node start, Node end)
