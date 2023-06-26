@@ -1,5 +1,7 @@
 using GeeksForGeeksPractice.ArrayProblems;
 using GeeksForGeeksPractice.DynamicProgramming;
+using GeeksForGeeksPractice.DynamicProgramming.DpOnSequence;
+using GeeksForGeeksPractice.DynamicProgramming.DpOnStrings;
 using GeeksForGeeksPractice.GraphProblem;
 using GeeksForGeeksPractice.GreedyApproach;
 using GeeksForGeeksPractice.LinkedList;
@@ -7,8 +9,10 @@ using GeeksForGeeksPractice.Recursion;
 using GeeksForGeeksPractice.StringRealtedProblem;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Net.WebSockets;
+using System.Security.Cryptography;
 using System.Threading;
 
 namespace GeeksForGeeksPractice
@@ -198,12 +202,118 @@ namespace GeeksForGeeksPractice
       //FindMinimumPathSumInGrid();
 
       //FindMinimumPathSumINTrangle();
-     // MaximumFallingPathSum();
+      // MaximumFallingPathSum();
 
-      NinjaAndHisFriends();
+      // NinjaAndHisFriends();
 
+      // FindSubSetSum();
+
+      //PartitionEquallSubSetSum();
+
+      //CountSubSet();
+      // CountPartationWithGivenSum();
+
+      // KnapSackProblemSolution();
+      //FindMinimumCoins();
+
+      //CoinChangeProblem();
+      //KnapSackWithInfiniteSupply();
+
+      LongestCommonSubSeq();
       Console.ReadLine();
     }
+
+    static void LongestCommonSubSeq()
+    {
+      string s1 = "lop"; string s2 = "plo";
+      LongestCommonSebSequence lcs = new LongestCommonSebSequence();
+      var res= lcs.LCS(s1,s2);
+    }
+
+    static void KnapSackWithInfiniteSupply()
+    {
+      int[] wt = new int[3] { 2, 4, 6 };
+      int[] val = new int[3] { 50, 11, 13 };
+      int n = wt.Length;
+      int W = 10;
+      KnapSackWithInfiniteSupply kswf = new KnapSackWithInfiniteSupply();
+      var res= kswf.KnapSackInfiniteSupply(wt,val,W,n-1);
+    }
+
+    static void CoinChangeProblem()
+    {
+      int[] arr = new int[3] { 1, 2, 3 };
+      int target = 5;
+      CoinChangeTwo cct = new CoinChangeTwo();
+      var res = cct.CountWaysToChangeUtil(arr,arr.Length-1,target);
+    }
+
+    static void FindMinimumCoins()
+    {
+      int[] arr = new int[3] { 1, 2, 3 };
+      int T = 7;
+      MinimumCoins mc = new MinimumCoins();
+      var res=  mc.FindMinimumCoins(arr,7,arr.Length-1);
+    }
+
+    static void KnapSackProblemSolution()
+    {
+      int[] wt = new int[] { 1, 2, 4, 5 };
+      int[] val = new int[] { 5,4,8,6 };
+      int W = 5;
+      int n = wt.Length;
+      KnapSackProblem knp = new KnapSackProblem();
+      var res=  knp.KnapSackSolution(wt,val,W,n-1);
+
+    }
+
+    static void CountPartationWithGivenSum()
+    {
+      int[]  arr=new int[4] {5,2,6,4 };
+      int diff = 3;
+      CountPartitionsWithGivenDifference cpd = new CountPartitionsWithGivenDifference();
+      var res= cpd.CountPartitionWithDifference(arr,diff);
+
+      var rs = cpd.findWays(arr,diff);
+    }
+
+
+    static void CountSubSet()
+    {
+      int[] arr = new int[] { 1, 2, 2, 3 };
+      int k = 5;
+
+      CountSubSetWithSumK csk = new CountSubSetWithSumK();
+      //var res=  csk.CountSubSet(arr,arr.Length-1,k);
+
+      var res1 = csk.CountSubSetMatchK(arr,k);
+
+      var rk = csk.FindWays(arr,k);
+    }
+
+    static void PartitionEquallSubSetSum()
+    {
+      int[] arr = new int[] { 2, 3, 3, 3, 4, 5 };
+      int n = arr.Length;
+
+      PartitionEqualSubSetSum pes = new PartitionEqualSubSetSum();
+      var res= pes.CanPartition(n,arr);
+
+    }
+
+    static void FindSubSetSum()
+    {
+      int[] arr = new int[4] { 1, 2, 3,4 };
+
+      SubSetSumEqalltoTarget sbj = new SubSetSumEqalltoTarget();
+      var res= sbj.FindSubSetSum(2,arr,5);
+
+      int[][] dp = prepareTwoDdp(3, 6);
+      var res1 = sbj.FindSubSetSumMemoization(2,arr,5,dp);
+
+      var res3 = sbj.FindSubSetSumTabulation(4,arr,4);
+    }
+   
 
     static void NinjaAndHisFriends()
     {
@@ -216,7 +326,26 @@ namespace GeeksForGeeksPractice
       int m = a[0].Length;
 
       NinjaAndHisFriends nhf = new NinjaAndHisFriends();
-      var res=  nhf.NinjaAndHisFriend(a,0,0,m-1,n,m);
+      //var res=  nhf.NinjaAndHisFriend(a,0,0,m-1,n,m);
+
+
+
+      int[][][] dp = new int[n][][];
+      for (int i = 0; i < n; i++)
+      {
+        dp[i] = new int[m][];
+        for (int j = 0; j < m; j++)
+        {
+          dp[i][j] = new int[m];
+
+          for (int k = 0; k < m; k++)
+          {
+            dp[i][j][k] = -1;
+          }
+        }
+      }
+
+      var res2 = nhf.maximumColocolate(a, 0, 0, m - 1, n, m, dp);
     }
 
     static void MaximumFallingPathSum()

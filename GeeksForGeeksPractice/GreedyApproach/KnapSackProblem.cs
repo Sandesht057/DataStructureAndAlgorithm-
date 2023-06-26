@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
@@ -7,7 +7,7 @@ namespace GeeksForGeeksPractice.GreedyApproach
 {
 
 
-    public  class KnapSackProblem
+    public  class KnapSackProblemGreedy
     {
         public class Item
         {
