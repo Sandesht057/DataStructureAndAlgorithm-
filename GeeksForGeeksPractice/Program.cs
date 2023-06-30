@@ -1,6 +1,7 @@
 using GeeksForGeeksPractice.ArrayProblems;
 using GeeksForGeeksPractice.DynamicProgramming;
 using GeeksForGeeksPractice.DynamicProgramming.DpOnSequence;
+using GeeksForGeeksPractice.DynamicProgramming.DpOnStock;
 using GeeksForGeeksPractice.DynamicProgramming.DpOnStrings;
 using GeeksForGeeksPractice.GraphProblem;
 using GeeksForGeeksPractice.GreedyApproach;
@@ -219,10 +220,80 @@ namespace GeeksForGeeksPractice
       //CoinChangeProblem();
       //KnapSackWithInfiniteSupply();
 
-      LongestCommonSubSeq();
+      //LongestCommonSubSeq();
+      // LongestPalindromicSubSeq();
+      // MinInsertionToMakePalin();
+
+      //MinInsertionOrDeletionToConvertString();
+
+      // FindDistinguish();
+
+      //EditDistances();
+
+      BestTimeToBuyAndSellSto();
       Console.ReadLine();
     }
 
+    static void BestTimeToBuyAndSellSto()
+    {
+      int[] arr = new int[6] { 7, 1, 5, 3, 6, 4 };
+      BestTimeToBusAndSellStock bbs = new BestTimeToBusAndSellStock();
+      //var res= bbs.FindMaximumProfit(arr);
+
+      BuyAndSellStockII bbii = new BuyAndSellStockII();
+      var res1 = bbii.FindMaxProfit(arr,0,arr.Length,0);
+
+      var rk = bbii.FindMaxProfitTabulation(arr,arr.Length);
+    }
+
+    static void EditDistances()
+    {
+      string s1 = "horse";
+      string s2 = "ros";
+      int m = s1.Length;
+      int n = s2.Length;
+      EditDistance edt = new EditDistance();
+      var res = edt.EditDistanceUtil(s1,s2,m-1,n-1);
+      int[][] dp = prepareTwoDdp(m, n);
+      var res1 = edt.EditDistanceUtilmemoization(s1, s2, m - 1, n - 1, dp);
+      var res2 = edt.EditDistanceTabulation(s1,s2,m,n);
+
+    }
+
+    static void FindDistinguish()
+    {
+      string s1 = "babgbag";
+      string s2 = "bag";
+      int m = s1.Length;
+      int n = s2.Length;
+      DistinctSubSequences dss = new DistinctSubSequences();
+      //var res= dss.FindDistinctSubSequence(s1,s2,m-1,n-1);
+
+      var res1 = dss.FindDistinctSubSeqMemoization(s1,s2,m,n);
+
+      var r = dss.SubsequenceCounting(s1, s2, m, n);
+    }
+    static void MinInsertionOrDeletionToConvertString()
+    {
+      string s1 = "abcd"; string s2 = "anc";
+      MinInsertionOrDeletionToConvertString mid = new MinInsertionOrDeletionToConvertString();
+      var res= mid.MinInsertionOrDeletionToCnvString(s1,s2);
+    }
+
+
+    static void MinInsertionToMakePalin()
+    {
+      string s = "abcaa";
+      MinInsertionToMakePalindrome mtp = new MinInsertionToMakePalindrome();
+      var res= mtp.MinInsertion(s);
+    }
+
+    static void LongestPalindromicSubSeq()
+    {
+      string s = "bbabcbcab";
+      LongestPalindromicSubSequence lps = new LongestPalindromicSubSequence();
+      var res= lps.LPS(s);
+    }
     static void LongestCommonSubSeq()
     {
       string s1 = "lop"; string s2 = "plo";

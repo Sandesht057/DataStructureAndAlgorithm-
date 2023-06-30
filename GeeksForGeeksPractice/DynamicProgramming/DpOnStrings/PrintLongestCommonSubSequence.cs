@@ -61,6 +61,8 @@ namespace GeeksForGeeksPractice.DynamicProgramming.DpOnStrings
 
       }
 
+      return dummyString;
+
     }
   }
 }
