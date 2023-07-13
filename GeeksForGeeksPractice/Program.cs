@@ -1,5 +1,6 @@
 using GeeksForGeeksPractice.ArrayProblems;
 using GeeksForGeeksPractice.DynamicProgramming;
+using GeeksForGeeksPractice.DynamicProgramming.DpOnLongestIncreasingSubSequence;
 using GeeksForGeeksPractice.DynamicProgramming.DpOnSequence;
 using GeeksForGeeksPractice.DynamicProgramming.DpOnStock;
 using GeeksForGeeksPractice.DynamicProgramming.DpOnStrings;
@@ -230,10 +231,104 @@ namespace GeeksForGeeksPractice
 
       //EditDistances();
 
-      BestTimeToBuyAndSellSto();
+      // BestTimeToBuyAndSellSto();
+      // BuyStockWithBoildown();
+      // BuyAndSellStockWithFee();
+      //LongestIncreasingSubSequences();
+      // PrintLongestIncreasingSubsequece();
+
+      // LongestIncreasingSubSeQUsingBinaryS();
+
+      // FindLongestDivisibleSubSet();
+      //LongestStringChain();
+
+      //LongextBitonicSubSeq();
+      CountLongestIncreasingSubSeq();
       Console.ReadLine();
     }
 
+    static void CountLongestIncreasingSubSeq()
+    {
+      int[] arr = new int[8] { 1, 5, 4, 3, 2, 6, 7, 2 };
+      CountLongestIncreasingSubSequence cis = new CountLongestIncreasingSubSequence();
+      var res= cis.CountLIS(arr,arr.Length);
+    }
+
+    static void LongextBitonicSubSeq()
+    {
+      int[]  arr=new int[] { 1, 11, 2, 10, 4, 5, 2, 1 };
+      LongextBitonicSubSequence lbs = new LongextBitonicSubSequence();
+      var res= lbs.LongestBitonicSubSeq(arr,arr.Length);
+    }
+
+    static void LongestStringChain()
+    {
+      string[] arr = new string[] { "a","b","bca","ba","bda","bdca"};
+
+      LongestStringChain lsc = new LongestStringChain();
+      string s1 = "ac";
+      string s2 = "abc";
+      var res1 = lsc.LongestIncreasingChain(arr,arr.Length);
+      //var res= lsc.Compare(s1,s2);
+    }
+
+    static void FindLongestDivisibleSubSet()
+    {
+      int[] arr = new int[] { 1, 16, 7, 8, 4 };
+      LongestDivisibleSubSet lds = new LongestDivisibleSubSet();
+      //var res= lds.LongestDivisibleSubSetUtil(arr,arr.Length,0,-1);
+
+      //Array.Sort(arr);
+     // var res1 = lds.LongestDivisibleSubSetMemo(arr,arr.Length);
+
+      var res = lds.DivisibleSet(arr.ToList());
+
+    }
+
+    static void LongestIncreasingSubSeQUsingBinaryS()
+    {
+      int[] arr = new int[] { 10, 9, 2, 5, 3, 7, 101, 18 };
+
+      LongestIncreasingSubSeQUsingBinarySearch libs = new LongestIncreasingSubSeQUsingBinarySearch();
+      var res=  libs.LongestIncSubSeQByBinarySearch(arr,arr.Length);
+
+    }
+
+    static void PrintLongestIncreasingSubsequece()
+    {
+      int[] arr1 = new int[8] { 10, 9, 2, 5, 3, 7, 101, 18 };
+      PrinLongestIncreasingSubSequence pli = new PrinLongestIncreasingSubSequence();
+      var length= pli.LongestIncreasingSubSequence(arr1,arr1.Length);
+    }
+
+    static void LongestIncreasingSubSequences()
+    {
+      int[] arr = new int[3] { 4, 2, 6 };
+
+      int[] arr1 = new int[8] { 10, 9, 2, 5, 3, 7, 101, 18 };
+
+      LongestIncreasingSubSequence lis = new LongestIncreasingSubSequence();
+      //var res= lis.LISSofar(arr,arr.Length,0,-1);
+     // var res1 = lis.LongestIncreasingSubsequenceTabulation(arr,arr.Length);
+     // var res2 = lis.LongestIncreasingSubSeq(arr,arr.Length);
+      //var rk = lis.LongestIncreasingSubsequence(arr1);
+    }
+
+    static void BuyAndSellStockWithFee()
+    {
+      int[] arr = new int[] { 1, 3, 2, 8, 4, 9 };
+      int fee = 2;
+      BuyAndSellStockWithFees bswf = new BuyAndSellStockWithFees();
+      var res=  bswf.BuyAndSellStockWithFee(arr,arr.Length,2);
+    }
+
+    static void BuyStockWithBoildown()
+    {
+      int[] arr = new int[5] { 4, 9, 0, 4, 10 };
+      BuyandSellStockWithCooldown bsw = new BuyandSellStockWithCooldown();
+      //var res= bsw.FindProfitWithCooldown(arr,0,arr.Length,0);
+      var res1 = bsw.FindProfitWithCooldownTabulation(arr,arr.Length);
+    }
     static void BestTimeToBuyAndSellSto()
     {
       int[] arr = new int[6] { 7, 1, 5, 3, 6, 4 };
