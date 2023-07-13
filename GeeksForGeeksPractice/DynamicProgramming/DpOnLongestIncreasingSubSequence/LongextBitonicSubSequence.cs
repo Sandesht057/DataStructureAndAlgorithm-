@@ -25,7 +25,7 @@ namespace GeeksForGeeksPractice.DynamicProgramming.DpOnLongestIncreasingSubSeque
 
       for (int index = 0; index < n; index++)
       {
-        for (int prevIndex = 0; prevIndex < index-1; prevIndex++)
+        for (int prevIndex = 0; prevIndex <= index-1; prevIndex++)
         {
           if (arr[prevIndex] < arr[index])
           {
@@ -39,12 +39,10 @@ namespace GeeksForGeeksPractice.DynamicProgramming.DpOnLongestIncreasingSubSeque
       {
         for (int prevIndex = n-1; prevIndex >index; prevIndex--)
         {
-
           if (arr[prevIndex] < arr[index])
           {
             dp1[index] = Math.Max(dp1[index], 1 + dp1[prevIndex]);
           }
-
         }
       }
 
